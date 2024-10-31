@@ -80,6 +80,7 @@ const ToggleBtn = styled.button`
 function Coins() {
   const { isLoading, data } = useQuery<ICoin[]>("allCoins", fetchCoins);
   const setterFn = useSetRecoilState(isDarkAtom);
+  console.log(data);
   return (
     <Container>
        <Helmet>

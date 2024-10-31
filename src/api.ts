@@ -1,5 +1,6 @@
 
-const BASE_URL = `/data`;
+const BASE_URL = `./data`;
+
 
 export function fetchCoins() {
     return fetch(`${BASE_URL}/coins.json`).then((response) => response.json());

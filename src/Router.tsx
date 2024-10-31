@@ -9,7 +9,7 @@ import Chart from "./routes/Chart";
 import Price from "./routes/Price";
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:`/`, 
     element: <App />,
     children: [
       {
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
       }
     ]
   }
-]);
+],
+{
+  basename: "/crypto-tracker", // GitHub Pages에서의 기본 경로 설정
+}
+);
 
 export default router
